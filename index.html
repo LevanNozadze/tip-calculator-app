@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="bannerForNme">
+        <img src="./assets/imgs/SPLITTER.svg" alt="banner">
+    </div>
+
+        <!-- MAIN -->
+    <main class="mainBoard">
+
+        <!---------------------- First Side ---------------------->
+        <div class="tipCalculateSide">
+            <div class="scren">
+                <h4>Bill</h4>
+                <div class="screen">
+                    <img class="icon" src="./assets/imgs/$.svg">
+                    <h5>142.55</h5>
+                </div>
+            </div>
+
+                <!-- SELECT TIP -->
+            <div class="SelectTip"> 
+                <h4>Select Tip %</h4>
+                <div class="Table">
+                    <div class="labels">5%</div>
+                    <div class="labels">10%</div>
+                    <div class="labels">15%</div>
+                    <div class="labels">25%</div>
+                    <div class="labels">50%</div>
+                    <div class="CustomLabel">Custom</div>
+
+                </div>
+            </div>
+
+                <!-- Number of people -->
+            <div class="numbrOfPeople">
+                <h4>Number of People</h4>
+                <div class="screen">
+                    <img class="icon" src="./assets/imgs/Combined Shape.svg">
+                    <h5>5</h5>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------- Secound Side ---------------------->
+        <div class="secoundSide">
+
+            <div style="margin-top: 40px;" class="SecoundScreen">
+                <h3>Tip Amount</h3>
+                <h6>/ person</h6>
+                <div class="resultOnScreen">$0.00</div>
+            </div>
+
+            <div class="SecoundScreen">
+                <h3>Tip Amount</h3>
+                <h6>/ person</h6>
+                <div class="resultOnScreen">$0.00</div>
+            </div>
+            
+            <button class="result">RESET</button>
+        </div>
+
+    </main>
+</body>
+</html>

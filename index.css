@@ -1,0 +1,216 @@
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #C5E4E7;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bannerForNme {
+    width: 86.664px;
+    height: 53.136px;
+    margin-bottom: 88px;
+}
+
+.mainBoard {
+    display: flex;
+    justify-content: space-between;
+    width: 920px;
+    height: 481px;
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.20);
+    padding: 32px;
+}
+
+.tipCalculateSide {
+    display: flex;
+    width: 379px;
+    height: 388px;
+    flex-wrap: wrap;
+    margin-top: 13px;
+}   
+
+h4 {
+    color: #5E7A7D;
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.screen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 379px;
+    height: 48px;
+    background: #F3F9FA; 
+    border-radius: 5px;
+    padding: 0px 17px;
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+.screen:hover {
+    border: 2px solid #26C2AE;
+    background: #F3F9FA;
+}
+
+.icon {
+    width: 13px;
+    height: 16px;
+}
+
+h5 {
+    color: #00474B;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.SelectTip {
+    width: 379px;
+    height: 152px;
+}
+
+.Table {
+    display: grid;
+    grid-template: 48px 48px / 117px 117px 117px;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.labels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #00474B;
+    color: #FFF;
+    text-align: center;
+    font-family: "Space Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.labels:hover {
+    background: #26C2AE;
+    color: #00474B;
+}
+
+.CustomLabel  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #F3F9FA;
+    color: #547878;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    
+}
+
+.CustomLabel:hover {
+    border: 2px solid #26C2AE;
+    background: #F3F9FA;
+    color: #00474B;
+}
+
+
+/* ---------------------  secound side ------------------   */
+
+
+
+.secoundSide {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 413px;
+    height: 417px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #00474B;
+}
+
+
+.SecoundScreen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 333px;
+    height: 71px;
+    color: #26C2AE;
+}
+
+h3 {
+    color: #FFF;
+    font-family: "Space Mono";
+    font-size: 16px;    
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h6 {
+    color: #7F9D9F;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.resultOnScreen {
+    color: #26C2AE;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1px;
+}
+
+.result {
+    width: 333px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #26C2AE;
+    color: #00474B;
+    text-align: center;
+    font-family: "Space Mono";
+    font-size: 20px;
+    font-style: normal; 
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.result:hover {
+    background: #9FE8DF;
+}
+
+
