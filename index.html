@@ -15,61 +15,61 @@
         <img src="./assets/imgs/SPLITTER.svg" alt="banner">
     </div>
 
-        <!-- MAIN -->
+    <!-- MAIN -->
     <main class="mainBoard">
 
-        <!---------------------- First Side ---------------------->
+        <!-- First Side -->
         <div class="tipCalculateSide">
             <div class="scren">
                 <h4>Bill</h4>
                 <div class="screen">
                     <img class="icon" src="./assets/imgs/$.svg">
-                    <h5>142.55</h5>
+                    <input id="billInput" type="number" min="0" step="0.01" placeholder="0.00">
                 </div>
             </div>
 
-                <!-- SELECT TIP -->
+            <!-- SELECT TIP -->
             <div class="SelectTip"> 
                 <h4>Select Tip %</h4>
-                <div class="Table">
-                    <div class="labels">5%</div>
-                    <div class="labels">10%</div>
-                    <div class="labels">15%</div>
-                    <div class="labels">25%</div>
-                    <div class="labels">50%</div>
-                    <div class="CustomLabel">Custom</div>
-
+                <div class="Table" id="tipButtons">
+                    <button class="labels" data-tip="5">5%</button>
+                    <button class="labels" data-tip="10">10%</button>
+                    <button class="labels" data-tip="15">15%</button>
+                    <button class="labels" data-tip="25">25%</button>
+                    <button class="labels" data-tip="50">50%</button>
+                    <input id="customTip" class="CustomLabel" type="number" min="0" max="100" placeholder="Custom">
                 </div>
             </div>
 
-                <!-- Number of people -->
+            <!-- Number of people -->
             <div class="numbrOfPeople">
                 <h4>Number of People</h4>
                 <div class="screen">
                     <img class="icon" src="./assets/imgs/Combined Shape.svg">
-                    <h5>5</h5>
+                    <input id="peopleInput" type="number" min="1" step="1" placeholder="1">
                 </div>
             </div>
         </div>
 
-        <!---------------------- Secound Side ---------------------->
+        <!-- Secound Side -->
         <div class="secoundSide">
 
-            <div style="margin-top: 40px;" class="SecoundScreen">
+            <div class="SecoundScreen margin-top-40">
                 <h3>Tip Amount</h3>
                 <h6>/ person</h6>
-                <div class="resultOnScreen">$0.00</div>
+                <div class="resultOnScreen" id="tipPerPerson">$0.00</div>
             </div>
 
             <div class="SecoundScreen">
-                <h3>Tip Amount</h3>
+                <h3>Total</h3>
                 <h6>/ person</h6>
-                <div class="resultOnScreen">$0.00</div>
+                <div class="resultOnScreen" id="totalPerPerson">$0.00</div>
             </div>
             
-            <button class="result">RESET</button>
+            <button class="result" id="resetBtn">RESET</button>
         </div>
 
     </main>
+    <script src="./javascript.js"></script>
 </body>
 </html>

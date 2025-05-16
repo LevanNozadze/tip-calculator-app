@@ -157,8 +157,9 @@ h5 {
 
 .SecoundScreen {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     width: 333px;
     height: 71px;
     color: #26C2AE;
@@ -211,6 +212,115 @@ h6 {
 
 .result:hover {
     background: #9FE8DF;
+}
+
+input[type="number"] {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #00474B;
+    font-family: "Space Mono";
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+    text-align: right;
+    /* Prevents jump on focus */
+    box-shadow: none;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border: 2px solid #26C2AE;
+    background: #F3F9FA;
+    box-shadow: 0 0 0 2px #9FE8DF33;
+    border-radius: 5px;
+}
+
+button.labels,
+input.CustomLabel {
+    /* Prevents jump on click/focus */
+    outline: none;
+    border: none;
+    box-shadow: none;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+button.labels:focus,
+button.labels.active {
+    outline: none;
+    border: 2px solid #26C2AE;
+    background: #26C2AE;
+    color: #00474B;
+}
+
+input.CustomLabel:focus {
+    outline: none;
+    border: 2px solid #26C2AE;
+    background: #F3F9FA;
+    color: #00474B;
+}
+
+button.labels:active {
+    background: #9FE8DF;
+    color: #00474B;
+}
+
+button.result:focus {
+    outline: none;
+    border: 2px solid #26C2AE;
+    background: #9FE8DF;
+}
+
+input#billInput,
+input#peopleInput {
+    background: transparent;
+    border: none;
+    text-align: right;
+    width: 100%;
+    font-size: 24px;
+    color: #00474B;
+    font-family: "Space Mono";
+    font-weight: 700;
+    /* Prevents jump on focus */
+    outline: none;
+    box-shadow: none;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+input#customTip.CustomLabel {
+    width: 100%;
+    text-align: center;
+    background: #F3F9FA;
+    border: none;
+    color: #547878;
+    font-family: "Space Mono";
+    font-size: 24px;
+    font-weight: 700;
+    outline: none;
+    box-shadow: none;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+input#customTip.CustomLabel:focus {
+    border: 2px solid #26C2AE;
+    background: #F3F9FA;
+    color: #00474B;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
 }
 
 
